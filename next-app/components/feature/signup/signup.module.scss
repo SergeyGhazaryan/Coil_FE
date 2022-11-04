@@ -1,0 +1,230 @@
+.signUpContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--websiteColor);
+
+  .signup {
+    padding: 80px 200px;
+    border-radius: 40px;
+    background-color: var(--white);
+
+    .form {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      margin-top: 20px;
+
+      .field {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+
+        .errorMessage {
+          color: #f02849;
+        }
+      }
+
+      .field > div {
+        width: 500px;
+      }
+
+      .field > div > div {
+        border-radius: 10px !important;
+      }
+
+      .cursor_pointer {
+        cursor: pointer;
+        color: #bcbec0;
+      }
+
+      .horizontal_div {
+        padding: 0 80px;
+      }
+
+      .horizontal {
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--gray);
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+      }
+
+      .horizontal > span {
+        font-size: var(--text_sm);
+        font-weight: 400;
+        background-color: var(--white);
+        padding: 10px;
+      }
+
+      .Adminbox {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .cheackbox {
+        border-color: var(--gray_250);
+        width: 20px;
+        height: 20px;
+      }
+
+      .submit {
+        width: 500px;
+        height: 50px;
+        font-size: var(--text_base);
+        font-weight: 700;
+        background-color: var(--buttonColor);
+        color: var(--white);
+        border-radius: 10px;
+        border: none;
+      }
+    }
+
+    .loginGoogle {
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+
+    .loginGoogle > button {
+      box-shadow: none !important;
+      border: 1px solid var(--gray_250) !important;
+      border-radius: 10px !important;
+      padding: 2px !important;
+    }
+
+    .loginGoogle > button > span {
+      font-size: var(--text_sm);
+      font-weight: 400;
+      color: var(--black);
+    }
+
+    .loginLink {
+      display: flex;
+      justify-content: center;
+    }
+
+    .link {
+      a {
+        color: var(--green);
+        font-size: var(--text_sm);
+        font-weight: 700;
+        line-height: 17px;
+      }
+    }
+    .loading {
+      margin-left: 45%;
+    }
+  }
+
+  @media screen and (max-height: 950px) {
+    height: auto;
+
+    .signup {
+      margin: 45px;
+    }
+  }
+}
+
+.errorMessage {
+  color: var(--red);
+}
+
+@media (max-width: 900px) {
+  .signUpContainer {
+    width: 100%;
+    height: 100vh;
+
+    .signup {
+      width: 336px;
+      height: 620px;
+      padding-left: 32px;
+      padding-right: 34px;
+      padding-top: 40px;
+      background: var(--white);
+      border-radius: 15px;
+
+      .title {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+      }
+
+      .errorMessage {
+        font-size: 10px;
+      }
+
+      .form {
+        display: block;
+        margin-top: 10px;
+        width: 270px;
+
+        .field {
+          width: 270px;
+          height: 61px;
+          margin-top: 18px;
+
+          .inputField {
+            border-radius: 5px;
+            margin-top: 4px;
+            width: 270px;
+            padding: 0;
+            position: relative;
+          }
+
+          .inputFieldProps {
+            height: 7px;
+          }
+
+          .errorMessage {
+            position: absolute;
+            width: 336px;
+            top: 40px;
+            left: -20px;
+          }
+
+          .pass_inp {
+            @extend .inputField;
+          }
+        }
+
+        .submit {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 16px;
+          width: 270px;
+          height: 40px;
+          background: var(--websiteColor);
+          border-radius: 4px;
+          margin-top: 24px;
+        }
+
+        .Adminbox {
+          display: none;
+        }
+
+        .horizontal_div {
+          margin-top: 20px;
+          height: 25px;
+          padding: 0;
+        }
+      }
+
+      .loginGoogle {
+        margin-top: 14px;
+      }
+
+      .loginLink {
+        margin-top: 0%;
+      }
+    }
+  }
+}

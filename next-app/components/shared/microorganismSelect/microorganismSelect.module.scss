@@ -1,0 +1,37 @@
+.container {
+  margin-bottom: 60px;
+  background: white !important;
+
+  h4 {
+    color: var(--black);
+    margin-bottom: 13px;
+  }
+
+  .mobileSelect{
+    width: 580px;
+  }
+
+  .select {
+    background-color: var(--websiteColor);
+    border: none;
+    width: 600px;
+    height: 50px;
+    color: var(--black);
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background: white !important;
+    align-items: center;
+
+    option:not(:checked) {
+      margin-left: 10px;
+      background-color: var(--background);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobileSelect {
+    width: 325px !important;
+  }
+}

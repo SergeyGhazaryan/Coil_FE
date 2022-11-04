@@ -1,0 +1,23 @@
+.configuration_title {
+  color: var(--black);
+  font-style: normal;
+  width: 100%;
+  margin: 1rem 0;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.mobileSelect {
+  width: 600px;
+}
+
+@media (max-width: 650px) {
+  .mobileSelect {
+    margin-right: 10px;
+    width: 95%;
+  }
+}
+
+.css-1pn59pd {
+  width: -350px !important;
+}

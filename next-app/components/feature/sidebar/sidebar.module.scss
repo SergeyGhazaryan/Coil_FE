@@ -1,0 +1,75 @@
+.headerIcon {
+  padding: 20px;
+}
+
+.iconLinks > span {
+  cursor: pointer;
+}
+.iconLinks {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  .separateLink {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logOutIcon {
+    margin-top: 100px;
+  }
+
+  .activeLink {
+    font-weight: 700;
+    color: var(--green);
+  }
+}
+
+.iconLinks {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .separateLink {
+    cursor: pointer;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .activeLink {
+    font-weight: 700;
+    color: var(--black) !important;
+  }
+}
+
+.line {
+  width: 4px;
+  height: 50px;
+}
+
+.logOutIcon {
+  margin-top: 100px;
+}
+
+.activeLine {
+  background-color: var(--white);
+}
+
+.tabMenuTitle {
+  color: var(--textColor);
+  font-size: 20px;
+}
+
+.tabMenuActive {
+  color: var(--white);
+  font-size: 20px;
+}

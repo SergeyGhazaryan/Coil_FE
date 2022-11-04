@@ -1,0 +1,98 @@
+.table {
+  width: 1020px !important;
+  border: 1px solid var(--gray_250);
+}
+
+.tableHead {
+  background: #08645e;
+}
+
+.tableHeadCell {
+  font-weight: 600;
+  p {
+    color: #ffffff;
+  }
+}
+
+.tableRow {
+  border-bottom: 2px solid var(--gray_250);
+  border-top: 2px solid var(--gray_250);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.optimize_button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  border: solid 1px;
+  margin: 1rem 1rem 1rem 0rem;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  border-radius: 5px;
+  border-color: transparent;
+  width: 150px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.table_title {
+  color: var(--white);
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.alertDiv {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 25px;
+  background-color: rgb(237, 0, 0);
+  font-size: 17px;
+  color: white;
+  border-radius: 6px;
+  animation: ease-in 500ms;
+  padding: 6px;
+  right: calc(50% - 125px);
+  top: 10px;
+  p {
+    display: flex;
+    gap: 6px;
+    background-color: red;
+  }
+}
+
+@media (max-width: 1020px) {
+  .optimizationTable {
+    width: 100vw !important;
+
+    .table {
+      .tableHead {
+        th {
+          border: solid 0.1px black;
+          padding: 1px;
+
+          p {
+            font-size: 10px !important;
+          }
+        }
+
+        .tableHeadCell {
+          padding: 0;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .mobileTable {
+    width: 100% !important;
+  }
+}

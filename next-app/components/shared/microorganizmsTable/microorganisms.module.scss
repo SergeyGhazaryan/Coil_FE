@@ -1,0 +1,47 @@
+.table {
+  min-width: 650;
+  border: 1px solid #bcbec0;
+}
+
+.mobileTable { 
+  width: 650px !important;
+}
+
+.tableHead {
+  background: #08645e;
+}
+
+.tableHeadCell {
+  font-weight: 500;
+  color: white !important;
+  font-size: 14px;
+  padding: 0 25px;
+}
+
+.tableHeadRow {
+  height: 45px;
+}
+
+.tableRow {
+  border-top: 1px solid #bcbec0;
+  font-size: 14px;
+  font-weight: 500;
+  height: 45px;
+}
+
+.firstColumn {
+  color: white;
+}
+
+@media (max-width: 375px) { 
+  .mobileTable {
+    width: 335px !important;
+    .table {
+      width: 320px !important;
+
+      .tableHead {
+        width: 320px;
+      }
+    }
+  }
+}

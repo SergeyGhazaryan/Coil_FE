@@ -1,0 +1,300 @@
+.edit_container {
+  width: 100%;
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--websiteColor);
+
+  .backButton {
+    cursor: pointer;
+    margin-top: 30px;
+    max-width: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+
+    .backIcon {
+      margin-right: 5px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .backIcon:hover {
+    cursor: pointer;
+  }
+
+  .edit_account {
+    opacity: 1;
+    z-index: 1000;
+    padding-top: 40px;
+    height: 90%;
+    width: 45%;
+    color: var(--black_700);
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: var(--black_300);
+    transition: opacity 0.3s ease-in 0.3s, visibility 0.3s ease-in 0.3s;
+    transform: scale(0.9);
+    border-radius: 0.4rem;
+    background-color: var(--white);
+
+    @media only screen and (max-width: 640px) {
+      height: 38rem;
+      width: 500px;
+    }
+  }
+  .field {
+    margin: 20px;
+
+    .input {
+      margin: 5px;
+      width: 300px;
+      margin-left: -5px;
+      height: 40px;
+      border-radius: 2px;
+      border: none;
+      font-size: 18px;
+      padding: 5px;
+      color: var(--black_700);
+      background-color: var(--white);
+      box-shadow: 10px 10px 10px -10px var(--black_300);
+      transition: background-color 0.4s ease-out;
+    }
+  }
+
+  .save {
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 0 !important;
+    height: 50px;
+    border: none;
+    background-color: var(--buttonColor);
+    border-radius: 2px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    transition: background-color 0.4s ease-out;
+    max-width: 240px;
+    border-radius: 10px;
+    text-transform: none;
+  }
+
+  .changePassword {
+    line-height: 14px;
+    height: 75px;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    max-width: 240px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #bcbec0;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .save:hover {
+    background-color: var(--black_700);
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .save:focus {
+    outline: none;
+    background-color: var(--black_700);
+  }
+
+  .delete {
+    margin: 10px;
+    font-size: 0.9rem;
+
+    .link a {
+      color: var(--red_100);
+      text-decoration: none;
+      margin-left: 17px;
+      padding: 2px;
+      transition: all 0.4s ease-out;
+      cursor: pointer;
+    }
+
+    .link a:hover {
+      color: var(--yellow);
+      font-size: 1rem;
+    }
+  }
+
+  .logout:hover {
+    background-color: var(--black_700);
+    font-size: 1rem;
+  }
+
+  .logout:focus {
+    outline: none;
+    background-color: var(--black_700);
+  }
+
+  .emailAlert {
+    color: var(--pink) !important;
+  }
+
+  .errorMessage {
+    color: var(--red);
+    font-size: 0.9rem;
+  }
+
+  .loading {
+    width: 95%;
+  }
+
+  .horizontal {
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid var(--gray_250);
+    line-height: 0.1em;
+    margin-left: 25%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .horizontal span {
+    padding: 0 10px;
+    font-size: var(--text_sm);
+    font-weight: 400;
+    background-color: var(--white);
+  }
+
+  .profile_img {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .attachImage {
+    margin-top: 20px;
+  }
+
+  .profileContainer {
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+  }
+
+  .profile_img img {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .attachFileContainer {
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 20px 10px;
+    border: 1px solid var(--gray_250);
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-left: 5px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: var(--black);
+    }
+  }
+}
+
+.deleteAccNo {
+  border-radius: 5;
+  background-color: #ffffff;
+  padding: 8px 35px;
+  font-size: 14px;
+  color: #000000;
+  box-shadow: none;
+  border: 1px solid #bcbec0;
+}
+
+.deleteAccYes {
+  border-radius: 5;
+  background-color: #08645e;
+  padding: 8px 35px;
+  font-size: 14px;
+  color: #ffffff;
+  box-shadow: none;
+  text-transform: none;
+}
+
+.inputLabel {
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 0 0.4rem;
+}
+
+.inputs {
+  width: 95%;
+
+  & .MuiInputBase-root {
+    height: 55;
+    color: #000;
+    margin-bottom: 1rem;
+    background-color: #fff;
+  }
+}
+
+.backButtonProfile {
+  cursor: pointer;
+  margin-top: 30px;
+  max-width: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  filter: var(--filter_shadow);
+  
+  .backIcon {
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+html:root {
+  --websiteColor: #048a81;
+  --tabColor: #08645e;
+  --textColor: #56dcd3;
+  --buttonColor: #08645e;
+  --secondary: #262730;
+  --pink: #ff4b4b;
+  --black: #000000;
+  --black_700: #000000c0;
+  --black_300: #0000004d;
+  --button_color: #131720;
+  --white: #ffffff;
+  --green: #043730;
+  --light_green: #25291b;
+  --gray: #808080;
+  --white_300: #f4f1ec;
+  --gray_250: #bcbec0;
+  --gray_700: #4c4f53;
+  --brown_400: #636363;
+  --red: #ff0000;
+  --red_100: #e86161;
+  --yellow: #faa702;
+  --filter_shadow: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1))
+}
+
+html:root {
+  --text_min: 8px;
+  --text_xsm: 10px;
+  --text_xs: 12px;
+  --text_sm: 14px;
+  --text_tiny: 16px;
+  --text_base: 20px;
+  --text_lg: 24px;
+  --text_xl: 32px;
+  --text_l: 55px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  user-select: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

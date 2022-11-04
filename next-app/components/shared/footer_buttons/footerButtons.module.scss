@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  justify-content: flex-end;
+  width: 264px;
+}
+
+.next_button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  border: solid 1px;
+  margin: 1rem 1rem 1rem 0rem;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  border-radius: 5px;
+  border-color: transparent;
+  min-width: 120px;
+  min-height: 40px;
+  display: block;
+  cursor: pointer;
+}
+
+.previous_button {
+  width: 100%;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 30px;
+  line-height: 150%;
+  border: solid 1px #dfdddd;
+  margin: 1rem 1rem 1rem 0rem;
+  border-radius: 5px;
+  background: white;
+  min-width: 120px;
+  min-height: 40px;
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .root {
+    width: 100%;
+    padding: 5px;
+    justify-content: flex-start;
+    .next_button {
+      width: 100%;
+    }
+    .previous_button {
+      width: 100%;
+    }
+  }
+}

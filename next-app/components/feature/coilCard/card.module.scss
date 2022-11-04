@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  width: 398px;
+  height: 211px;
+  border-radius: 5px;
+  justify-content: center;
+  padding-left: 32px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-right: 28px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  .left {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    flex-direction: column;
+    .install {
+      display: flex;
+      width: 100px;
+      flex-direction: column;
+      .lamp {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--websiteColor);
+      }
+    }
+    .data {
+      display: flex;
+      width: 160px;
+      flex-direction: column;
+      margin-top: 11px;
+      gap: 14px;
+      .model {
+        margin-top: 11px;
+      }
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+  .right {
+    @extend .left;
+    text-align: right;
+    margin-top: 72px;
+    gap: 14px;
+    height: 110px;
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    margin: 0 auto;
+    width: 300px;
+  }
+}

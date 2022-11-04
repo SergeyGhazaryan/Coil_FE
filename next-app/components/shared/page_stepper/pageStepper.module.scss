@@ -1,0 +1,20 @@
+.stepper {
+  width: 542px;
+  margin-left: -50px;
+  margin-bottom: 62px;
+}
+
+.active {
+  color: #048a81 !important;
+}
+
+.text {
+  color: #048a81 !important;
+}
+
+@media (max-width: 600px) {
+  .stepper {
+    width: 320px;
+    margin: 30px auto;
+  }
+}

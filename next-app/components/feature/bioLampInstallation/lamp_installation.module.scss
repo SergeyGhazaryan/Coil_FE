@@ -1,0 +1,25 @@
+.title {
+    padding: 15px 0;
+    font-size: var(--text_xl);
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.graph {
+    margin-top: 40px;
+}
+
+.divider {
+    border: 0.1px solid var(--gray);
+    max-width: 825px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}

@@ -1,0 +1,66 @@
+.reportTypeSelect {
+  margin-bottom: 20px;
+  width: 256px;
+}
+
+.reportNameField {
+  width: 256px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  height: 45px;
+  border-top: 1px solid var(--gray_250);
+  width: 100%;
+
+  input {
+    background-color: transparent;
+    color: var(--black);
+    font-weight: 500;
+    font-size: var(--text_tiny);
+    border: transparent;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.label {
+  margin: 1% 0% 1% 3%;
+
+  p {
+    color: var(--black);
+    font-weight: 500;
+    font-size: var(--text_tiny);
+  }
+}
+
+@media (max-width: 375px) {
+  .MobileLabel {
+    margin-top: 32px;
+  }
+
+  .reportTypeSelect {
+    height: 40px;
+    div {
+      height: 40px;
+    }
+  }
+
+  .reportNameField {
+    height: 40px;
+    div {
+      height: 40px;
+    }
+  }
+}

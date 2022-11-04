@@ -1,0 +1,25 @@
+.iconOpen {
+  position: fixed;
+  z-index: 100;
+  left: 300px;
+  padding-top: 20px;
+}
+
+.openBarMenu {
+  display: "flex";
+  position: "fixed";
+
+  .openBarFixed {
+    display: flex;
+  }
+}
+
+.burgerMenu {
+  width: 100%;
+  height: 50px;
+  background-color: var(--websiteColor);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}

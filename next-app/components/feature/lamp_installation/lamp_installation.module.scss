@@ -1,0 +1,53 @@
+.title {
+    padding: 15px 0;
+    font-size: var(--text_xl);
+    font-weight: bold;
+}
+
+.images {
+    width: 50%;
+    margin: 1rem;
+}
+
+.loading {
+    margin-top: 10rem;
+    margin-left: 20rem;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    margin-bottom: 1rem;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.download {
+    cursor: pointer;
+    margin-left: 35%;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--gray);
+}
+
+.download:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+.cards {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.divider {
+    border: 0.1px solid var(--gray);
+    max-width: 825px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}

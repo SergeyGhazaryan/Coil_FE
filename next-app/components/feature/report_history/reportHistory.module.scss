@@ -1,0 +1,126 @@
+.root {
+  width: 100%;
+  background-color: var(--websiteColor);
+}
+
+.content {
+  position: absolute;
+  left: 350px;
+  top: 140px;
+  max-width: 900px;
+  width: 100%;
+
+  h1 {
+    padding: 15px 0px !important;
+  }
+}
+
+.contentSidebarClose {
+  position: absolute;
+  left: 0px;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  h1 {
+    padding: 15px 0px !important;
+  }
+}
+
+.title {
+  padding: 15px 0;
+  font-size: var(--text_xl);
+  font-weight: bold;
+}
+
+.searchBlock {
+  height: 60px;
+  text-align: right;
+  margin-bottom: 10px;
+  input {
+    width: 400px !important;
+  }
+}
+
+.backgroundColor {
+  background: white;
+}
+
+.backgroundColor:hover {
+  background-color: rgb(240, 238, 238);
+  cursor: pointer;
+}
+
+.iconOpen {
+  position: fixed;
+  z-index: 100;
+  left: 300px;
+  padding-top: 20px;
+}
+
+.loading {
+  position: absolute;
+  left: 110px;
+}
+
+.typesButton {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  border: solid 1px;
+  margin: 1rem 1rem 1rem 0rem;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  border-radius: 5px;
+  border-color: var(--buttonColor);
+  min-width: 120px;
+  min-height: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tableCell {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.headTableCell {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 18px;
+  background-color: var(--websiteColor);
+  p {
+    color: white;
+  }
+}
+
+.tableHead {
+  background: #08645e !important;
+}
+
+@media screen and (max-width: 420px) {
+  .searchBlock {
+    padding-right: 10px;
+    height: 60px;
+    text-align: right;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .typesButton {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.tabs {
+  & > MuiTabs-indicator {
+    background-color: orange !important;
+    height: 3;
+    color: black !important;
+  }
+  & > MuiTab-root.Mui-selected {
+    color: red !important;
+  }
+  .button {
+    color: green !important;
+  }
+  color: green !important;
+}
+
+.indicator {
+  background: #048a81 !important;
+}
+
+.selected {
+  color: red !important;
+}
+
+.tab {
+  width: 130px;
+  height: 40px;
+}
+@media screen and (max-width: 500px) {
+  .tabs {
+    margin: 0 auto !important;
+  }
+}

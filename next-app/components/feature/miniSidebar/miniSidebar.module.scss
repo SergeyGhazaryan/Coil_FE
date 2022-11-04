@@ -1,0 +1,65 @@
+.headerContainer {
+    display: "flex";
+    position: "relative";
+}
+
+.closedBar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--websiteColor);
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.closedBar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--websiteColor);
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.headerIconClosed {
+    padding: 20px;
+}
+
+.iconLinks > span {
+    cursor: pointer;
+}
+
+.iconLinks {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iconsBox {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    .iconContainer {
+        margin-top: 100px;
+    }
+}
+
+.line {
+    width: 4px;
+    height: 50px;
+}
+
+.activeLine {
+    background-color: var(--white);
+}
+
+.icon {
+    position: fixed;
+    left: 50px;
+    top: 10px;
+    z-index: 20;
+}

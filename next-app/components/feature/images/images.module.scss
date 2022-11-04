@@ -1,0 +1,36 @@
+.heading {
+  padding: 15px 0;
+  font-size: var(--text_xl);
+}
+
+.container {
+  display: "flex";
+  justify-content: "space-between";
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  margin-bottom: 1rem;
+}
+
+.firstColumn {
+  margin: 30px 0 !important;
+}
+
+.download {
+  cursor: pointer;
+  margin-left: 35%;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: var(--gray);
+}
+
+.download:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+

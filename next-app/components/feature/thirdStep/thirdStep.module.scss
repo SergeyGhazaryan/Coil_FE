@@ -1,0 +1,41 @@
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .loadingPDFButton {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    width: 167px;
+    height: 40px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    border: solid 1px;
+    background-color: var(--buttonColor);
+    color: var(--white);
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    margin-left: 56px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loadingPDFButton {
+    margin: 10px 10px !important;
+    width: 100% !important;
+  }
+}

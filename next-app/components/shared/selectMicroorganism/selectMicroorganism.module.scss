@@ -1,0 +1,23 @@
+.container {
+  margin: 10px;
+
+  h4 {
+    color: var(--black);
+    margin-bottom: 13px;
+  }
+
+  select {
+    border: none;
+    height: 30px;
+    color: var(--white);
+
+    option:not(:checked) {
+      margin-left: 10px;
+      background-color: var(--white);
+    }
+  }
+
+  select:focus {
+    border: 1.5px solid var(--pink);
+  }
+}

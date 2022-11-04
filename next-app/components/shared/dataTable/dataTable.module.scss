@@ -1,0 +1,38 @@
+.table {
+  width: 1020px !important;
+  border: 1px solid var(--gray_250);
+}
+
+.rowName {
+  border-top: 1px solid var(--gray_250);
+  font-size: 14px;
+  font-weight: 500;
+  height: 45px;
+}
+
+.tableColumn {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 0 25px !important;
+  color: white !important;
+}
+
+.tableRow {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 0 25px !important;
+}
+
+.tableHeadRow {
+  height: 45px;
+}
+
+.tableHead {
+  background: #08645e;
+}
+
+@media screen and (max-width: 1020px) {
+  .tableContainer {
+    width: 100vw !important;
+  }
+}
